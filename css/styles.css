@@ -26,10 +26,10 @@ img {
   width: 300px;
   margin: 30px 20px;
   transition: all 1s;
-  border-bottom: solid 6px black;
+  /* border-bottom: solid 6px black;
   border-right: solid 5px black;
   /* box-shadow: 14px 14px 15px #daa520; */
-  box-shadow: 2px 2px 3px;
+  /* box-shadow: 2px 2px 3px; */ 
 }
 
 img:hover {
