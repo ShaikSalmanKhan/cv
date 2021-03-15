@@ -1,0 +1,97 @@
+body {
+  font-style: italic;
+  font-family: cursive,serif;
+  text-align: center;
+}
+
+h1 {
+  border-bottom: solid 6px;
+  width: 300px;
+  box-shadow: 4px 4px 5px teal;
+  border-right: solid 6px;
+  margin: 20px auto;
+}
+/* ===================images================= */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.image-style {
+  width: 70%;
+}
+
+img {
+  width: 300px;
+  margin: 30px 20px;
+  transition: all 1s;
+  border-bottom: solid 16px;
+  border-right: solid 10px;
+  /* box-shadow: 14px 14px 15px #daa520; */
+  box-shadow: 4px 4px 5px;
+}
+
+img:hover {
+  transform: scale(1.2);
+}
+
+.button-style {
+  position: fixed;
+  left: 5px;
+  top: 50%;
+}
+
+
+/* ===========================Buttons ==============================*/
+.button {
+  background-color: teal;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.home {
+  background-color: teal;
+  padding: 12px 17px;
+  position: fixed;
+  left: 0;
+  top: 200px;
+}
+
+.projects {
+  background-color: teal;
+  position: fixed;
+  left: 0;
+  top: 260px;
+}
+
+.resume {
+  background-color: teal;
+  position: fixed;
+  left: 0;
+  top: 320px;
+}
+
+.contact {
+  background-color: teal;
+  position: fixed;
+  left: 0;
+  top: 380px;
+}
+
+
+/* ================Contact Style============ */
+.contact-style {
+  background-color: teal;
+  padding: 10px 16px;
+  color: white;
+  margin-right: 3%;
+}
+
+p {
+  margin-top: 10%;
+  font-size: 16px;
+}

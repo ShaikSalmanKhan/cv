@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>Home</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+
+          <!-- Buttons -->
+          <a class="button home "    href="index.html" role="button"><i class="fa fa-user-o"></i></a>
+          <a class="button projects" href="#projects" role="button"><i class="fa fa-code"></i></a>
+          <a class="button contact"  href="#contact" role="button"><i class="fa fa-comment"></i></a>
+          <a class="button resume" onclick="window.open('resume/resume.pdf')" role="button"><i class="fa fa-file-pdf-o"></i></a>
+
+
+          <!-- Profile Section start-->
+          <div class="card mb-3" style="max-width: 60%;margin:15% auto 15% auto;box-shadow: 21px -18px 20px 0 teal;">
+                <div class="row g-0">
+                      <div class="col-md-4">
+                            <img src="images/profile-pic.jpg" class="card-img-top" style="border:none;" alt="...">
+                      </div>
+                      <div class="col-md-8">
+                                <div class="card-body" style="margin-left:5%;margin-top:5%;">
+                                        <h3 class="card-title" style="color:teal;">I'm Salman Khan</h3>
+                                        <p class="card-text">Looking for an opportunity to work in a challenging environment to improve my
+                                                              skills and utilize my knowledge in the growth of the organization.
+                                        </p>
+                                        <h6>Open to Work: <i style="color:teal;font-size:20px;" class="fa fa-check"></i></h6>
+                                        <h6>Looking for : <q><span style="color:teal";>Django Developer Role</span></q></h6> <br>
+
+                                          <!-- Buttons -->
+                                        <a href="https://github.com/ShaikSalmanKhan" target="_blank" class="btn btn-outline-secondary" ><i class="fa fa-github"></i> GitHub</a>
+                                        <a href="https://www.linkedin.com/in/shaik-salman-khan/" target="_blank" class="btn btn-outline-secondary" role="button"><i class="fa fa-linkedin"></i> LinkedIn</a>
+                                        <!-- <a href="#projects" class="btn btn-outline-secondary" role="button"><i class="fa fa-code"></i> Projects</a> -->
+                                        <a onclick="window.open('resume/resume.pdf')" class="btn btn-outline-secondary" role="button"><i class="fa fa-arrow-down"></i> Resume</a>
+                                </div>
+                        </div>
+                   </div>
+           </div>
+          <!-- Profile section end -->
+
+
+      <!-- Projects Starts-->
+      <div class="card mb-3" id="projects"  style="max-width: 60%;margin:15% auto 10% auto;box-shadow: 21px -18px 20px 0 teal;">
+                <!-- Title -->
+                <h1>Projects </h1>
+
+                <!-- Scrolling text -->
+                <marquee behavior="scroll" direction="left" style="font-size:24px;color:teal">==> please mouse-over (or) click on the image <==</marquee>
+
+                <!-- Project Images -->
+                <div class="container">
+                      <img class="image-id" id="1" src="static/1.png"></img>
+                      <img class="image-id" id="2" src="static/2.png"></img>
+                      <img class="image-id" id="3" src="static/3.png"></img>
+                      <img class="image-id" id="4" src="static/4.png"></img>
+                      <img class="image-id" id="5" src="static/5.png"></img>
+                      <img class="image-id" id="6" src="static/6.png"></img>
+                      <img class="image-style image-id" id="7" src="static/7.png"></img>
+                      <img class="image-style image-id" id="8" src="static/8.png"></img>
+                      <img class="image-style image-id" id="9" src="static/9.png"></img>
+                </div>
+        </div>
+        <!-- Project end -->
+
+
+      <!-- Contact -->
+      <div class="card mb-3" id="contact" style="max-width: 60%;margin:10% auto;box-shadow: 21px -18px 20px 0 teal;">
+              <h3>Contact Information</h3><br>
+              <p> <i class="fa fa-phone contact-style"></i>+91-8801094246</p>
+              <p style="margin-left:95px";><i class="fa fa-google contact-style"></i> shaiiksalmankhan@gmail.com</p>
+              <p> <i class="fa fa-whatsapp contact-style"></i>+91-8801094246</p>
+              <p style="margin-left:20px";> <i class="fa fa-twitter contact-style"></i>@ShaikSalmanKha7</p>
+      </div>
+      <!-- Contact end -->
+
+
+      <!-- Change static image to gif when hovered -->
+      <script>
+          $(".image-id").on({
+            "mouseover": function() {
+              this.src = 'images/' +  $(this).attr('id') +'.gif';
+            },
+            "mouseout": function() {
+              this.src = 'static/' +  $(this).attr('id') +'.png';
+            }
+          });
+      </script>
+
+</body>
+</html>
